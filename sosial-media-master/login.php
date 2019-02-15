@@ -10,7 +10,7 @@ if(isset($_POST['login'])){
     $sql = "SELECT * FROM users WHERE username=:username OR email=:email";
     $stmt = $db->prepare($sql);
     
-    // bind parameter ke query
+    // karena tidak bisa ngoding jadi ini adalah perubahan kecil yg saya lakukan
     $params = array(
         ":username" => $username,
         ":email" => $username
